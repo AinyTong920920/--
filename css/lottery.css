@@ -1,0 +1,1088 @@
+/*定义全局样式*/
+body, input, button, select, textarea, table {
+    font: 12px/1.5 Tahoma, Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: #333;
+}
+
+.main {
+    width: 980px;
+    margin: 0 auto;
+}
+
+/*----------------头部导航----------------*/
+header {
+    height: 32px;
+    overflow: hidden;
+    border-bottom: 1px solid #D8DFE5;
+    background-color: #F5F6F7;
+}
+
+header nav.fleft {
+    position: absolute;
+    z-index: 10;
+}
+
+header nav.fleft a {
+    display: inline-block;
+    height: 33px;
+    padding: 0 11px;
+    line-height: 32px;
+}
+
+header nav a.jfsc {
+    border: solid #D8DFE5;
+    border-width: 0 1px;
+    padding: 0 10px;
+    background: #fff;
+}
+
+header nav.fright {
+    height: 22px;
+    line-height: 22px;
+    padding: 6px 0 4px;
+}
+
+header nav.fright span {
+    display: inline-block;
+    color: #999;
+    margin: 0 8px;
+    _line-height: 22px;
+    font-family: simsun;
+}
+
+.btnico {
+    display: inline-block;
+    background: url(../images/img2/btn.png) no-repeat;
+}
+
+.ico_rss {
+    background-position: 0 -32px;
+    height: 21px;
+    line-height: 21px;
+    padding-left: 8px;
+    position: relative;
+    zoom: 1;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.ico_bg {
+    background-position: right -32px;
+    padding-right: 8px;
+    _line-height: 23px;
+    position: relative;
+    right: -2px;
+    top: 0;
+    zoom: 1;
+    overflow: hidden;
+    height: 100%;
+    cursor: pointer;
+    text-align: center;
+}
+
+.ico_bg > b {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: Arial;
+    margin-right: 4px;
+}
+
+header a:hover {
+    text-decoration: underline;
+    color: #FF4E00;
+}
+/*账号检测模拟*/
+.login_checkbox {
+    display: none;
+    width: 400px;
+    height: 280px;
+    background-color: rgb(254, 254, 254);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
+a.close_ckbox {
+    display: block;
+    width: 47px;
+    height: 20px;
+    float: right;
+    background: url(../images/img1/icon_3_tiny.png) -221px -126px no-repeat;
+    /*_background: url(../images/img1/icon_3_8.png) -221px -126px no-repeat;*/
+    outline: 0;
+}
+
+a.close_ckbox:hover {
+    background-position: -221px -151px;
+}
+
+.login_checkbox p {
+    text-align: center;
+    padding: 50px 25px;
+    font: 18px sans-serif;
+    color: #333;
+    line-height: 35px;
+}
+
+.login_checkbox p a {
+    font-size: 16px;
+    color: #59AfE4;
+}
+
+.login_checkbox p a:hover {
+    color: #e64e3e;
+}
+
+/*----------------main副导航----------------*/
+.navico {
+    background: url(../images/img2/sprite.png) no-repeat;
+}
+
+.sec_nav {
+    background: transparent;
+}
+
+.sec_nav > .main {
+    position: relative;
+    height: 70px;
+    zoom: 1;
+}
+
+.sec_nav h1 {
+    height: 47px;
+    width: 320px;
+    background-position: 0 -159px;
+    overflow: hidden;
+    margin-top: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.sec_nav h1 a {
+    display: block;
+    height: 47px;
+    float: left;
+}
+
+a.homelink {
+    width: 185px;
+}
+
+a.jifenlink {
+    width: 135px;
+}
+
+.sec_nav .nav_menu {
+    position: absolute;
+    top: 35px;
+    right: 0;
+    line-height: 20px;
+    _line-height: 22px;
+}
+
+.tx1 {
+    font-family: "Microsoft YaHei", "微软雅黑", "黑体";
+}
+
+.nav_menu li {
+    float: left;
+    display: inline;
+    position: relative;
+}
+
+.nav_menu li a {
+    display: inline-block;
+    width: 72px;
+    height: 25px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.nav_menu li span {
+    color: #d1d1d1;
+    padding: 0 10px;
+}
+
+.nav_menu li a.on {
+    color: #fff;
+    background: url(../images/img2/sprite.png) no-repeat;
+}
+
+.ico_new {
+    position: absolute;
+    left: 60px;
+    top: -12px;
+    display: inline-block;
+    width: 22px;
+    height: 13px;
+    background-position: -98px -14px;
+}
+
+/*----------main主体-----------*/
+
+.sec_main {
+    background: url(../images/img2/repeat_x.png) repeat-x 0 -46px;
+    position: relative;
+    zoom: 1;
+    z-index: 1;
+}
+
+.sec_mainA {
+    margin-top: 20px;
+}
+
+/*积分商城侧边导航-*/
+.side_bar {
+    width: 230px;
+}
+
+.sbar_nav {
+    border: 1px solid #dcdcdc;
+    background: #fff;
+}
+
+.sbar_nav h2 {
+    margin-top: -1px;
+    font-weight: normal;
+}
+
+.sbar_nav h2 > a {
+    display: block;
+    position: relative;
+    height: 57px;
+    padding: 10px 25px 0 45px;
+    border: solid #e7e7e7;
+    border-width: 1px 0;
+    background: url(../images/img2/repear_x.jpg) repeat-x;
+}
+
+.ico_gift {
+    margin-left: -50px;
+    margin-top: 5px;
+    position: absolute;
+    width: 44px;
+    height: 46px;
+    background-position: -55px -27px;
+}
+
+span.c_em1 {
+    font-size: 20px;
+    display: block;
+}
+
+.c_em1, .c_em1_1 {
+    color: #ff4e00;
+}
+
+.c_sub1 {
+    color: #888;
+}
+
+.ico_arr {
+    position: absolute;
+    top: 27px;
+    right: 14px;
+    width: 10px;
+    height: 19px;
+    background-position: -86px 0;
+}
+
+.category_info {
+    padding: 0 2px;
+}
+
+.category_info dl {
+    border-top: 1px solid #e7e7e7;
+    margin-top: -1px;
+    padding-top: 10px;
+}
+
+.category_info dl dt {
+    display: block;
+    color: #f30;
+    font-size: 14px;
+    padding-left: 28px;
+    margin-bottom: 10px;
+}
+
+.category_info dt a {
+    color: #ff4e00;
+}
+
+.category_info dd {
+    float: left;
+    width: 112px;
+    margin-bottom: 8px;
+}
+
+.category_info dd a {
+    display: inline-block;
+    padding: 0 5px;
+    height: 18px;
+    line-height: 18px;
+    margin-left: 23px;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+.ico_lottery {
+    margin-left: -50px;
+    margin-top: 5px;
+    position: absolute;
+    width: 44px;
+    height: 46px;
+    background-position: -147px -27px;
+}
+
+.category_info a:hover {
+    background: #fe4800;
+    color: #fff;
+}
+
+/*特色专区*/
+.spec_mod h3 {
+    font: normal 16px/40px "Microsoft YaHei", "黑体";
+    color: #333;
+}
+
+.spec_mod > ul li {
+    text-align: center;
+}
+
+.spec_mod > ul li:nth-child(even) a {
+    background: #f7f7f7;
+}
+
+.spec_mod > ul li a {
+    display: inline-block;
+    width: 113px;
+    height: 38px;
+    white-space: nowrap;
+    line-height: 38px;
+    border: 1px solid #e2e2e2;
+    margin: -1px 0 0 -5px;
+    cursor: pointer;
+}
+
+.ico_hot {
+    display: inline-block;
+    width: 22px;
+    height: 12px;
+    background-position: -98px 0;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.spec_mod > ul a:hover {
+    color: #fe4800;
+}
+
+/*sec_mainA主体*/
+.sec_mainA article {
+    margin-left: 240px;
+    min-height: 1px;
+}
+
+/*底部*/
+footer {
+    margin-top: 10px;
+}
+
+footer ul {
+    width: 980px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+    line-height: 20px;
+}
+
+footer a {
+    color: #595959;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #FF4E00;
+}
+
+/*抽奖区*/
+.lottery-cont {
+    position: relative;
+    width: 100%;
+    height: 650px;
+    background: url(../images/img2/lottery_bg.jpg) no-repeat;
+}
+
+.lottery-cont .lottery-box {
+    position: absolute;
+    width: 408px;
+    height: 426px;
+    top: 200px;
+    left: 0;
+    overflow: hidden;
+    z-index: 98;
+}
+.pale_cont{
+    width:408px;
+    height: 426px;
+    background: url("../images/img2/pale.png") no-repeat center;
+}
+/*抽奖结果弹窗*/
+.result_layout{
+    position:absolute;
+    top:200px;
+    left:0;
+    width:400px;
+    height:280px;
+    background-color: rgba(249, 249, 249, 0.9);
+    z-index:99;
+    display: none;
+}
+.result_txt{
+    padding:70px 30px 10px;
+    text-align: center;
+    font-size:28px;
+    font-weight: bold;
+}
+.result_txt .failed,.result_txt .time_over{
+    display:none;
+}
+.time_over{
+    font-size:20px;
+    font-weight: normal;
+}
+.time_over.on{
+    margin-top: 20px;
+    color: #ff6745;
+}
+.awards_name{
+    display: inline-block;
+    font-size:25px;
+    line-height: 60px;
+    color:#ff7109;
+}
+.replayBtn{
+    display:block;
+    width:160px;
+    height:40px;
+    margin: 0 auto;
+    line-height: 40px;
+    border-radius: 20px;
+    color: #85838b;
+    font-size:20px;
+    text-align: center;
+    background-color: rgba(244, 206, 95, 0.95);
+}
+a.closeBtn{
+    display: block;
+    width: 47px;
+    height: 20px;
+    float: right;
+    background: url(../images/img1/icon_3_tiny.png) -221px -126px no-repeat;
+    /*_background: url(../images/img1/icon_3_8.png) -221px -126px no-repeat;*/
+    outline: 0;
+}
+a.closeBtn:hover {
+    background-position: -221px -151px;
+}
+/*转盘指针*/
+.pale_pointer {
+    width: 190px;
+    height: 190px;
+    overflow: hidden;
+    position: absolute;
+    top: 107px;
+    left:110px;
+    cursor: pointer;
+    transition: scale .5s;
+    background: url("../images/img2/pointer.png") no-repeat center;
+    /*animation: pointer_transform 3s infinite ;*/
+}
+
+.pale_pointer.hover {
+    transform: scale(1.2);
+}
+@keyframes pointer_transform {
+    0%{
+        transform: scale(1);
+    }
+    20%{
+        transform: scale(1.2);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.lottery-cont .cont-tab {
+    position: absolute;
+    width: 485px;
+    height: 365px;
+    top: 214px;
+    left: 227px;
+    background: #fff;
+    border: 1px solid #C7C7C7;
+    z-index: 10;
+}
+
+.cont-tab .tab-nav {
+    position: absolute;
+    top: -27px;
+    right: -1px;
+}
+
+.cont-tab .tab-nav li, .lump, .btn, .freeget {
+    background: url(../images/img2/lottery_sprite.png) no-repeat;
+}
+
+.cont-tab .tab-nav li {
+    display: inline-block;
+    float: left;
+    width: 94px;
+    height: 26px;
+    margin-right: -1px;
+    background-position: 0 -48px;
+    z-index: 103;
+}
+
+.cont-tab .tab-nav li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #484848;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+    font-family: "Microsoft YaHei", Simsun, Mingliu, Arial, Helvetica;
+}
+
+.cont-tab .tab-nav .on {
+    background-position: -95px -48px;
+    z-index: 104;
+}
+
+.cont-tab .tab-nav .on a {
+    color: #FFF;
+}
+
+.cont-tab .prize {
+    float: right;
+    width: 264px;
+    height: 144px;
+    margin: 7px 14px 8px 0;
+}
+
+.cont-tab .prize img {
+    float: left;
+}
+
+.cont-tab .prize .info-text {
+    display: block;
+    float: left;
+    width: 134px;
+    height: 144px;
+    color: #2E322F;
+    font-family: "Microsoft YaHei", Simsun, Mingliu, Arial, Helvetica;
+}
+
+.cont-tab .info-text .name {
+    display: block;
+    padding: 30px 0 0 8px;
+    font-size: 16px;
+}
+
+.cont-tab .info-text .price {
+    display: block;
+    padding-left: 8px;
+    font-size: 23px;
+    color: #F60;
+}
+
+.cont-tab .info-text .price ins {
+    font-size: 12px;
+    text-decoration: none;
+    color: #2E322F;
+}
+
+.cont-tab .time-bar {
+    position: relative;
+    float: right;
+    width: 306px;
+    height: 25px;
+    margin-right: -1px;
+    background-color: #FFBC46;
+    line-height: 25PX;
+    text-align: center;
+    color: #FFF;
+}
+
+.cont-tab .time-bar .lump {
+    position: absolute;
+    display: block;
+    width: 11px;
+    height: 33px;
+    top: -8px;
+    right: -11px;
+    background-position: -122px -75px;
+}
+
+#next_act {
+    display: none;
+}
+
+.cont-tab .lucky-tit {
+    float: right;
+    width: 278px;
+    height: 30px;
+    margin-top: 16px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FE4800;
+    font-weight: 400;
+    font-family: "Microsoft YaHei", Simsun, Mingliu, Arial, Helvetica;
+}
+
+.cont-tab .lucky-list {
+    float: right;
+    width: 230px;
+    height: 37px;
+    padding: 12px 16px;
+    margin-right: 14px;
+    border: 1px solid #C7C7C7;
+}
+
+.cont-tab .btns-line {
+    float: right;
+    width: 264px;
+    margin-right: 14px;
+}
+
+.cont-tab .btns-line a {
+    width: 121px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    color: #56647F;
+    background-image: none;
+}
+
+.cont-tab .btns-line .freeget {
+    display: block;
+    width: 147px;
+    height: 34px;
+    line-height: 300px;
+    overflow: hidden;
+    margin: 0 auto;
+    background: url(../images/img2/lottery_sprite.png) no-repeat;
+}
+
+/*更多赚取彩贝积分方式*/
+.gmi_mod_pro {
+    position: relative;
+    width: 720px;
+    height: 256px;
+    padding: 20px 0 20px 20px;
+    overflow: hidden;
+    background: url(../images/img2/index_t3.jpg) no-repeat;
+}
+
+.gmi_mod_pro h2 {
+    height: 21px;
+    margin-bottom: 22px;
+    color: #333;
+    font: normal 16px "Microsoft YaHei", "微软雅黑", "黑体";
+}
+
+.gmi_mod_pro .more-link {
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 24px;
+    font-weight: 700;
+    color: #333;
+}
+
+.goods-list {
+    width: 720px;
+    height: 190px;
+    overflow: hidden;
+}
+
+.goods-list li {
+    float: left;
+    width: 100px;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.goods-list li .img-link {
+    display: block;
+    width: 98px;
+    height: 98px;
+    border: 1px solid #DBDBDB;
+}
+
+.goods-list li .goods-info {
+    width: 100%;
+    height: 56px;
+}
+
+.goods-info span {
+    display: block;
+    text-align: center;
+    line-height: 22px;
+}
+
+.goods-info .name {
+    padding-top: 6px;
+    color: #333;
+}
+
+.goods-info .discount {
+    color: #f60;
+}
+
+.goods-list li .btns-line {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+}
+
+.btns-line > a {
+    height: 30px;
+    line-height: 29px;
+    _line-height: 31px;
+    padding-left: 10px;
+    color: #46577e;
+    position: relative;
+    display: inline-block;
+    background: url(../images/img2/btn.png) no-repeat;
+    background-position: 0 -85px;
+    zoom: 1;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.mod_btn, .mod_btn_bd {
+    position: relative;
+    display: inline-block;
+    background: url(../images/img2/btn.png) no-repeat;
+    zoom: 1;
+}
+
+.btns-line .mod_btn_bd {
+    display: inline-block;
+    right: -2px;
+    top: 0;
+    overflow: hidden;
+    height: 100%;
+    cursor: pointer;
+    text-align: center;
+    background-position: right -85px;
+    padding-right: 10px;
+}
+
+/*最近中奖的用户*/
+.gmi_mil {
+    width: 100%;
+    height: 368px;
+}
+
+.gmi_sbox_1 {
+    float: left;
+    width: 333px;
+    height: 346px;
+    padding: 22px 18px 0;
+    overflow: hidden;
+    background: url(../images/img2/lottery_t1.jpg) no-repeat;
+}
+
+.gmi_sbox_1 h2, .gmi_sbox_2 h2 {
+    height: 21px;
+    margin-bottom: 20px;
+    color: #333;
+    font: normal 16px "Microsoft YaHei", "微软雅黑", "黑体";
+}
+
+.lucky-list {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    color: #888;
+}
+
+.lucky-list .title {
+    height: 32px;
+    font-weight: 700;
+    color: #333;
+}
+
+.lucky-list span {
+    display: inline-block;
+    float: left;
+    height: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.lucky-list .name {
+    width: 105px;
+}
+
+.lucky-list .uid {
+    width: 88px;
+    padding-left: 2px;
+}
+
+.lucky-list .time {
+    width: 135px;
+    padding-left: 3px;
+}
+
+.gmi_sbox_2 {
+    float: right;
+    width: 324px;
+    height: 350px;
+    padding: 22px 18px 0;
+    overflow: hidden;
+    background: url(../images/img2/lottery_t2.jpg) no-repeat;
+}
+
+.gmi_sbox_2 .text-in {
+    width: 297px;
+    height: 63px;
+    padding: 10px;
+    margin: 0 auto;
+    border: 1px solid #DBDBDB;
+    overflow-x: hidden;
+}
+
+.gmi_sbox_2 .btns-line {
+    height: 27px;
+    padding: 8px 4px;
+}
+
+.gmi_sbox_2 .btns-line .btn {
+    display: block;
+    float: right;
+    width: 67px;
+    height: 27px;
+    line-height: 27px;
+    padding-left: 0;
+    background: url(../images/img2/lottery_sprite.png) no-repeat;
+    background-position: -189px -48px;
+    text-align: center;
+    color: #46577E;
+}
+
+.gmi_sbox_2 .btns-line .btn:hover {
+    color: #ff4e00;
+}
+
+.gmi_sbox_2 .msg-list {
+    width: 300px;
+    height: 166px;
+    overflow: hidden;
+}
+
+.gmi_sbox_2 .msg-list li {
+    width: 100%;
+    margin-bottom: 2px;
+    overflow: hidden;
+}
+
+.gmi_sbox_2 .msg-list .img-link {
+    display: block;
+    float: left;
+    width: 64px;
+    height: 64px;
+    border: 1px solid #DBDBDB;
+}
+
+.gmi_sbox_2 .msg-list .cell {
+    display: block;
+    float: left;
+    width: 225px;
+    padding-left: 9px;
+    line-height: 21px;
+}
+
+.cell .name {
+    display: block;
+    color: #333;
+}
+
+.cell .text {
+    display: block;
+    color: #9b9b9b;
+}
+
+.cell .time {
+    display: block;
+    color: #c6c6c6;
+}
+
+.cell .time span {
+    color: #888;
+}
+
+/*抽奖规则介绍*/
+.gmi_rule {
+    position: relative;
+    width: 720px;
+    height: 175px;
+    padding: 24px 0 20px 20px;
+    overflow: hidden;
+    background: url(../images/img2/index_t3.jpg) no-repeat;
+}
+
+.gmi_rule h2 {
+    height: 21px;
+    margin-bottom: 20px;
+    color: #333;
+    font: normal 16px "Microsoft YaHei", "微软雅黑", "黑体";
+}
+
+.rule-list {
+    padding-left: 20px;
+}
+
+.rule-list li {
+    list-style-type: decimal;
+    line-height: 21px;
+    color: #888;
+}
+
+/*本期奖品*/
+.gmi_award {
+    position: relative;
+    width: 720px;
+    _height: 578px;
+    min-height: 578px;
+    padding: 25px 0 20px 20px;
+    overflow: hidden;
+    background: url(../images/img2/index_t4.jpg) no-repeat;
+}
+
+.gmi_award h2 {
+    height: 21px;
+    margin-bottom: 27px;
+    color: #333;
+    font: normal 16px "Microsoft YaHei", "微软雅黑", "黑体";
+}
+
+.gmi_award .award_list {
+    width: 720px;
+    overflow: hidden;
+}
+
+.gmi_award li {
+    float: left;
+    width: 158px;
+    height: 246px;
+    margin: 0 22px 18px 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.award_list li > a {
+    display: block;
+    width: 156px;
+    height: 156px;
+    border: 1px solid #DBDBDB;
+}
+
+.award_list li > a:hover {
+    border: 1px solid #FF4E00;
+}
+
+.award_info {
+    width: 100%;
+    height: 51px;
+}
+
+.mod_btn_bd:hover {
+    color: #FF4E00;
+}
+
+.award_info span {
+    padding-top: 6px;
+    color: #333;
+    display: block;
+    text-align: center;
+    line-height: 18px;
+}
+
+.btns-line span {
+    background-position: right -85px;
+    padding-right: 10px;
+}
+
+/*main彩贝链接*/
+.sec_cblink {
+    margin-top: 10px;
+    background: url(../images/img2/bg_cblink.jpg) #e9e9e9 repeat-x;
+    padding: 25px 20px 20px;
+}
+
+.sec_cblink > div {
+    float: left;
+    display: inline;
+    padding-right: 20px;
+}
+
+.col_cba {
+    width: 150px;
+    padding-left: 0;
+}
+
+a.cblink_logo {
+    display: inline-block;
+    margin-top: 18px;
+}
+
+.sec_cblink > div:nth-child(n+2) {
+    width: 140px;
+    padding-right: 20px;
+    padding-left: 30px;
+    border-right: 1px solid #d6d6d6;
+    border-left: 1px solid #f7f7f7;
+}
+
+.sec_cblink > div.col_jfsrv {
+    border-left: none;
+}
+
+.sec_cblink > div.col_kefu {
+    border-right: none;
+}
+
+.sec_cblink h3 {
+    font-size: 16px;
+    color: #979797;
+    line-height: 18px;
+    margin-bottom: 18px;
+    font-family: "Microsoft YaHei", "微软雅黑", "黑体";
+    font-weight: normal;
+}
+
+.sec_cblink li {
+    padding-left: 7px;
+    height: 24px;
+    line-height: 24px;
+}
+
+.sec_cblink li a:hover {
+    color: #FF4E00;
+    text-decoration: underline;
+}

@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QQ注册-方案二</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="qqzc.css">
+    <script src="../js/jquery-3.0.0.js"></script>
+    <script src="../js/chinese_chs.js"></script>
+    <script src="qqzc2.js"></script>
+</head>
+<body>
+<div class="bg">
+    <div class="container">
+        <!--头部-->
+        <header class="header">
+            <a href="../cbindex.html" class="logo"></a>
+            <a class="feedback" target="_blank">意见反馈</a>
+            <div id="lang_box">
+                <span>简体中文</span>|<a href="javascript:langSwitch('cht');">繁體中文</a>|<a
+                    href="javascript:langSwitch('en');">English</a></div>
+        </header>
+        <!--form主内容区-->
+        <main class="content clearfloat">
+            <section class="left fleft">
+                <a id="nav_1" class="nav_box cur" href="javascript:void(0);">
+                    <span class="dt nav_1">QQ帐号</span>
+                    <span class="dd">由数字组成，经典通行帐号</span>
+                </a>
+                <a id="nav_2" class="nav_box" href="javascript:void(0);">
+                    <span class="dt nav_2">邮箱帐号</span> <span class="dd">用邮箱地址注册，便于记忆</span>
+                </a>
+                <div class="search">
+                    <div class="ipt_box">
+                        <form class="search_form clearfloat" method="get" target="_blank" onsubmit="">
+                            <input name="number" class="txt" type="text" placeholder="输入要查找的QQ号码">
+                            <input class="btn" type="submit" value="">
+                        </form>
+                    </div>
+                    <ul class="clearfloat">
+                        <li><a class="item_1" href="javascript:;">生日</a></li>
+                        <li><a class="item_2" href="javascript:;">爱情</a></li>
+                        <li><a class="item_3" href="javascript:;">手机</a></li>
+                        <li><a class="item_4" href="javascript:;">年度</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="right fleft">
+                <div class="enter" id="enter">
+                    <a href="" id="enterBanner"></a>
+                    <div class="haomaTitle" id="hmtitle">
+                        <p class="haoma-inner" id="haoma-inner">注册帐号</p>
+                    </div>
+                    <form action="" method="post">
+                        <div id="formArea">
+                            <!--eamil账号注册-->
+                            <div id="email_box" class="hide">
+                                <div id="email_tips" class="box box_1">
+                                    <div class="item">注册方式</div>
+                                    <div class="ipt_box method_box nobg">
+                                        <a id="email_2" name="new_other_mail" tabindex="1">
+                                            使用非<span class="tahoma">QQ/Foxmail</span>邮箱
+                                        </a>
+                                        <a name="new_self_mail" id="email_1" class="checked" tabindex="2">
+                                            注册<span class="tahoma">QQ/Foxmail</span> 邮箱
+                                        </a>
+                                    </div>
+                                    <div class="info">
+                                        <table>
+                                            <tbody>
+                                            <tr>
+                                                <td class="hidden"></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="box box_2">
+                                    <label class="item" for="other_email">邮箱帐号</label>
+                                    <div id="mail_box" class="ipt_box nobg self">
+                                        <div class="ipt_other">
+                                            <div id="other_email_bg" class="bg_txt">
+                                                <input id="other_email" type="text" class="new_txt" name="other_email"
+                                                       tabindex="3" maxlength="38">
+                                            </div>
+                                            <ul id="other_email_ul" class="hide"></ul>
+                                        </div>
+                                        <div class="ipt_self">
+                                            <input type="text" name="self_email" id="self_email" tabindex="4"
+                                                   autocomplete="off" maxlength="18">
+                                            <div class="outer">
+                                                <div id="selfType" tabindex="5">@qq.com</div>
+                                                <ul id="selfTypeBox" class="hide">
+                                                    <li id="selfType0">@qq.com</li>
+                                                    <li id="selfType1">@foxmail.com</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <table>
+                                            <tbody>
+                                            <tr>
+                                                <td id="email_info" class="hidden"></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--QQ账号注册-->
+                            <div class="box box_3" style="z-index:0">
+                                <label class="item" for="nick">昵称</label>
+                                <div class="ipt_box nick_ipt_box">
+                                    <div id="nick_bg" class="bg_txt bg_focus">
+                                        <input type="text" class="new_txt" autofocus="on"
+                                               id="nick" name="nick" tabindex="6"
+                                               style="z-index:0" maxlength="24" autocomplete="off">
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <table>
+                                        <tbody>
+                                        <tr>
+                                            <td id="nick_info" class="tip">请输入昵称</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="box box_4"><label class="item" for="password">密码</label>
+                                <div class="ipt_box">
+                                    <div id="password_bg" class="bg_txt">
+                                        <input type="password" class="new_txt" id="password" name="password"
+                                               tabindex="7" maxlength="16">
+                                    </div>
+                                </div>
+                                <div class="info pwd_info">
+                                    <div class="pwd_tips hide" id="pwd_tips">
+                                        <div class="default" id="pwd_tip1">长度为6-16个字符</div>
+                                        <div class="default" id="pwd_tip2">不能包含空格</div>
+                                        <div class="default" id="pwd_tip3">不能是9位以下纯数字</div>
+                                    </div>
+                                    <table id="pwd_result" class="hide">
+                                        <tbody>
+                                        <tr>
+                                            <td id="password_pic">弱</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="password_info" class="password_info"></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="box box_5">
+                                <label class="item" for="password_again">确认密码</label>
+                                <div class="ipt_box">
+                                    <div id="password_again_bg" class="bg_txt">
+                                        <input type="password" class="new_txt"
+                                               id="password_again" tabindex="8" maxlength="16">
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <table>
+                                        <tbody>
+                                        <tr>
+                                            <td id="password_again_info" class="hidden"></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="box box_6">
+                                <div class="item">性别</div>
+                                <div class="ipt_box nobg sex_box">
+                                    <a name="male" id="sex_1"
+                                       class="checked"
+                                       tabindex="9">男</a>
+                                    <a id="sex_2" class="unchecked" name="femail" tabindex="10">女</a>
+                                </div>
+                                <div class="info">
+                                    <table>
+                                        <tbody>
+                                        <tr>
+                                            <td id="sex_info" class="hidden"></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="box box_7">
+                                <div class="item">生日</div>
+                                <div id="bday_dt" class="ipt_box nopadding nobg"
+                                     style="position: relative; z-index: 18889;">
+                                    <div id="inptu_search_tips" class="paopao" style="display:none">
+                                        <span id="inptu_search_tips_wording" class="p_l"></span>
+                                        <span class="p_r"></span>
+                                    </div>
+                                    <div id="birthday_type_box">
+                                        <select id="birthday_type_value" class="value_box" tabindex="11">
+                                            <option id="birthday_0" value="0">公历</option>
+                                            <option id="birthday_1" value="1">农历</option>
+                                        </select>
+                                    </div>
+                                    <div id="year_box">
+                                        <div id="year_bg" class="year_bg_txt">
+                                            <select id="year_value" class="year_value" tabindex="12" >
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div id="month_box">
+                                        <select id="month_value" class="month_value" tabindex="13">
+
+                                        </select>
+                                    </div>
+                                    <div id="day_box">
+                                        <select id="day_value" class="day_value" tabindex="14">
+
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <table>
+                                        <tbody>
+                                        <tr>
+                                            <td id="birthday_info" class="hidden"></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="box box_8">
+                                <div class="item">所在地</div>
+                                <div id="area_dt" class="ipt_box nopadding nobg" style="z-index: 18888;">
+                                    <div id="country_box">
+                                        <div id="country_value_bg" class="area_value_bg">
+                                            <select id="country_value" class="country_value" tabindex="15">
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div id="province_box">
+                                        <div id="province_value_bg" class="area_value_bg">
+                                            <select id="province_value" class="province_value" tabindex="16">
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div id="city_box">
+                                        <div id="city_value_bg" class="area_value_bg">
+                                            <select id="city_value" class="city_value" tabindex="17">
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <table>
+                                        <tbody>
+                                        <tr>
+                                            <td id="area_info" class="hidden"></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="box box_9 hide" id="code_box">
+                                <label class="item" for="code">验证码</label>
+                                <div id="code_area_new" class="hide">
+                                    <div id="capt" class="ipt_box nopadding nobg"></div>
+                                </div>
+                                <div id="code_area_img" class="hide">
+                                    <input id="code" class="" type="text" name="code"
+                                           tabindex="18" autocomplete="off"
+                                           maxlength="8">
+                                    <img id="code_img" style="float:left;cursor:pointer;margin-left:5px"
+                                         width="130" height="53"
+                                         src="">
+                                </div>
+                                <div class="info">
+                                    <table id="code_tips_tbl" class="" style="height: 49px;">
+                                        <tbody>
+                                        <tr>
+                                            <td id="code_info" class=""><span id="code_info_err"
+                                                                              class="tips">请先进行安全验证</span></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div id="phone_box" class="phone_box_land">
+                                <div id="sea_phone" class="box box_2 sea_phone"><label class="item"
+                                                                                       for="sea_country_input">地区</label>
+                                    <div class="sea_country_box" id="sea_country_box">
+                                        <div class="sea_area_value_bg"><input id="sea_country_input"
+                                                                              autocomplete="off"
+                                                                              class="sea_country_input"
+                                                                              tabindex="19">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="land_phone" class="box box_2 land_phone"><label class="item"
+                                                                                         for="phone_num"><span
+                                        style="display:inline-block;text-align:center">手机号码</span></label>
+                                    <div id="" class="ipt_box">
+                                        <div class="ipt_other">
+                                            <div id="phone_num_bg" class="bg_txt"><input id="phone_num" type="text"
+                                                                                         class="new_txt"
+                                                                                         name="phone_num"
+                                                                                         tabindex="20"
+                                                                                         autocomplete="off"> <a
+                                                    class="phone_del hide" id="phone_del"
+                                                    href="javascript:void(0);"></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <table>
+                                            <tbody>
+                                            <tr>
+                                                <td id="phone_info" class="tip"></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="box box_phone_tip">
+                                    <div class="tip" style="margin-left:189px;padding-top:4px;line-height:20px">
+                                        可通过该手机号码快速找回密码<br><span id="sea_entry" class="tip" style="line-height:20px">中国大陆地区以外手机号码&nbsp;
+                                        <a href="javascript:void(0);">点击这里</a></span>
+                                    </div>
+                                </div>
+                                <div id="sms_box" class="box hide" style="z-index:0">
+                                    <div class="item"></div>
+                                    <div class="ipt_box verima_ipt_box" id="verima_ipt_box">
+                                        <div id="verima_bg" class="bg_txt">
+                                            <input type="text" class="new_txt" id="verima" name="verima"
+                                                   style="z-index:0"
+                                                   autocomplete="off"
+                                                   maxlength="6" tabindex="21"></div>
+                                        <label id="verima_label" class="noplinfo hide">系统已将验证码发送到您的手机，请填入验证码</label>
+                                    </div>
+                                    <div class="getverima">
+                                        <div id="getverima" style="background-color:#f4f9fd;border-color:#d0dae3"
+                                             title="获取短信验证码"><span id="timeLeft"></span> <span id="verimaTip"
+                                                                                               style="color:#444">获取短信验证码</span>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <table>
+                                            <tbody>
+                                            <tr>
+                                                <td id="verima_info" class="hidden"></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div id="up_box" class="box hide">
+                                    <div class="item"></div>
+                                    <div style="line-height:22px"><p id="up_box_reason">该手机号码今日验证短信下发次数已达到上限</p>
+                                        <p>请用您的手机号<span id="up_box_mob" class="clr_006DB0"></span></p>
+                                        <p>发送短信<span class="clr_006DB0"> 1 </span>到 <span class="clr_006DB0"
+                                                                                          id="upPort">1069 8888 1700 511</span>
+                                            完成验证</p>
+                                        <div class="tips1">注：<br>1、您仅需支付运营商收取的标准短信资费，无需任何额外费用；<br>2、腾讯公司承诺不会对外泄漏您的手机号码及用于其他任何商业用途。
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box box_11">
+                                <div class="submit">
+                                    <input type="button" value="立即注册" tabindex="23"  id="submit">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box box_10" id="qzone_box">
+                            <div class="item"></div>
+                            <div class="ipt_box qzone_box nopadding"><a class="checked" name="qzone" id="qzone"
+                                                                        tabindex="22">同时开通QQ空间</a></div>
+                        </div>
+                        <div class="box box_11">
+                            <div class="item"></div>
+                            <div class="ipt_box">
+                                <div class="agree_box"><a name="agree" class="a_1 checked" id="agree" tabindex="22">我已阅读并同意相关服务条款和隐私政策</a>
+                                    <div id="x_box" class="x_box">
+                                        <div id="x_switcher"></div>
+                                        <p>
+                                            <a id="item_1" href="">《QQ号码规则》</a><br>
+                                            <a id="item_2" href="">《QQ空间服务协议》</a><br>
+                                            <a id="item_3" href="">《隐私政策》</a><br>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info"></div>
+                        </div>
+
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer class="footer" id="ffooter">
+            Copyright <span>©</span> 1998-2016 Tencent All Rights Reserved 腾讯公司 版权所有
+        </footer>
+    </div>
+</div>
+</body>
+</html>
